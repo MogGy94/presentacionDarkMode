@@ -1,0 +1,7 @@
+.heading{
+    display: grid;
+    place-items:center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: rgb(195, 225, 230);
+}

@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: consolas;
+    --light: #e7dfd5;
+    --light-green: #84a9ac;
+    --green: #3b6978;
+    --dark-green: #204051;
+}
+
+.custom__Card{
+    position: relative;
+    min-width: 350px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+
+}
+.custom__Card:before
+{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(255, 255, 255, .2);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.custom__Card .icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: grid;
+    place-items : center;
+    margin: 20px auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 1s;
+}
+/*box 1*/
+.custom__Card:nth-child(1) .icon{
+    box-shadow: 0 0 0 0 var(--light-green);
+    background: var(--light-green);
+
+}
+
+.custom__Card:nth-child(1):hover .icon{
+    box-shadow: 0 0 0 400px var(--light-green);
+    background: var(--light-green);
+
+}
+/*box 2*/
+.custom__Card:nth-child(2) .icon{
+    box-shadow: 0 0 0 0 var(--green);
+    background: var(--green);
+
+}
+
+.custom__Card:nth-child(2):hover .icon{
+    box-shadow: 0 0 0 400px var(--green);
+    background: var(--green);
+
+}
+/*box 3*/
+.custom__Card:nth-child(3) .icon{
+    box-shadow: 0 0 0 0 var(--dark-green);
+    background: var(--dark-green);
+
+}
+
+.custom__Card:nth-child(3):hover .icon{
+    box-shadow: 0 0 0 400px var(--dark-green);
+    background: var(--dark-green);
+
+}
+
+.custom__Card .content {
+    position: relative;
+    z-index: 100;
+    transition: 0.5s;
+
+}
+
+.custom__Card:hover .content{
+    color: #fff;
+}
+
+.custom__Card .content h3{
+    font-size: 25px;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.custom__Card .content p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    display:inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}

@@ -1,0 +1,38 @@
+*{
+    --main: 270;
+    --Light:90%;
+}
+
+.Example{
+    background: hsl(0, 100%, 51%);
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-areas: " box1 box3 box4"
+                         " box1 box2 box2"
+                         " box1 box2 box2" ;
+}
+
+.box1{
+    /*Fuentes*/
+    grid-area: box1;
+     background: hsl(var(--main), 78%, var(--Light));
+}
+.box2{
+    /*Main**/
+    grid-area: box2;
+     background: hsl(var(--main), 35%, calc(var(--Light)*0.98));
+}
+.box3{
+    /*Secondary*/
+    grid-area: box3;
+     background: hsl(var(--main), 59%, calc(var(--Light)*1.2));
+}
+.box4{
+    /*Tercer color **/
+    grid-area: box4;
+     background: hsl(var(--main), 89%, calc(var(--Light)*0.6));
+}
+
+
